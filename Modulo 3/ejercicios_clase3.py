@@ -37,6 +37,7 @@ class Persona:
     def cumpleanios(self):
         self.edad +=1
         print(self.edad)
+        
             
 persona1= Persona ("ana", 20)
 persona1.cumpleanios()
