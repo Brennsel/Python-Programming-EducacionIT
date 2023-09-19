@@ -183,3 +183,99 @@ def calcular_y_mostrar_area(figura):
 calcular_y_mostrar_area(circulo)
 calcular_y_mostrar_area(rectangulo)
 """
+
+#ARGUMENTOS DE PROGRAMA
+
+#Libreria sys - sys.argv (es una lista)
+#Sirve en caso de ejecutar el programa desde la terminal
+
+"""
+import sys # Importo la librería sys
+
+nombres = sys.argv[1:] # Guardo los argumentos en una lista
+
+if nombres:
+    print(f"Hola, {nombres}!!")
+else:
+    print("No indicaste ningún nombre!")
+"""
+
+#SISTEMA DE ARCHIVOS
+
+#Libreria os - os.listdir() (es una lista)
+
+import os # Importo la librería os
+
+#FUNCION os.listdir() - Devuelve una lista con los archivos y carpetas que se encuentran en el directorio indicado
+
+# dir = os.listdir() # Guardo los archivos y carpetas en una lista
+# print(os.listdir(os.getcwd())) # Imprimo la lista
+# print(dir) # Imprimo la lista
+
+# #FUNCION os.path.exists() - Devuelve True si el archivo o carpeta existe
+# exists = os.path.exists("clase3.py") # Guardo el resultado en una variable
+# print(exists) # Imprimo el resultado
+
+# #FUNCION os.mkdir() - Crea una carpeta en el directorio actual
+# try:
+#     os.mkdir("demo1.py") # Creo la carpeta
+# except FileExistsError:
+#     print("La carpeta ya existe!!")
+
+# #FUNCION os.rmdir() - Elimina una carpeta en el directorio actual
+
+# try:
+#     os.rmdir("demo1.py")
+#     print("Se elimino la carpeta")
+# except FileNotFoundError:
+#     print("La carpeta no existe!!")
+# except OSError:
+#     print("La carpeta no esta vacia!!")
+
+# #FUNCION os.remove() - Elimina un archivo en el directorio actual
+
+# try:
+#     os.remove("B:\\Usuario\\Desktop\\Python developer\\Python-Programming\Modulo3\\demo1\\temporal.txt")
+#     print("Se elimino el archivo")
+# except FileNotFoundError:
+#     print("El archivo no existe!!")
+
+# #FUNCION os.rename() - Renombra un archivo o carpeta en el directorio actual
+
+# try:
+#     os.rename("demo1.py", "demo2.py")
+#     print("Se renombro el archivo")
+# except FileNotFoundError:
+#     print("El archivo no existe!!")
+
+# #FUNCION os.system() - Ejecuta un comando del sistema operativo
+# os.system("dir") # Ejecuto el comando dir de Windows
+
+# #FUNCION os.name - Devuelve el nombre del sistema operativo
+# print(os.name) # Imprimo el nombre del sistema operativo
+
+# #SHUTIL - Libreria para copiar, mover y eliminar archivos y carpetas
+
+# import shutil # Importo la librería shutil
+
+# # #shutil.copy() - Copia un archivo en el directorio actual
+
+# # directorio = "temporal.txt"
+# # shutil.copy(directorio + "temporal.txt", directorio + "temporal2.txt)
+
+
+# #shutil.move() - Mueve un archivo en el directorio actual
+
+# #shutil.rmtree() - Elimina una carpeta en el directorio actual
+
+# shutil.rmtree("demo3.py")
+
+# #Cuidado al borrar archivos y carpetas con Python, no se puede recuperar una vez borrado en la papelera de reciclaje
+
+#-----------------------------------------------------------------
+
+#EJECUCION DE COMANDOS
+
+import subprocess # Importo la librería subprocess
+
+subprocess.run("dir", shell=True) # Ejecuto el comando dir de Windows
