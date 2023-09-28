@@ -18,7 +18,7 @@ dir = r"B:\Usuario\Desktop\Python developer\Python-Programming\Modulo 4\"
 conn = sqlite3.connect(dir + "database.sqlite")
 
 # Crear cursor
-cursor = conn.cursor()
+cursor = conn.cursor() # <-- Es el que nos permite ejecutar las consultas
 
 # Correr código SQL con el método execute()
 try:
@@ -87,6 +87,8 @@ gente = (
     ("Jorge", 41),
     ("Pedro", 25)
 )
+
+
 
 for nombre, edad in gente:
      cursor.execute(f"INSERT INTO personas VALUES (%s, %s)", {nombre, edad})
