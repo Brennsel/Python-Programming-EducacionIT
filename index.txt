@@ -1,0 +1,8 @@
+El modulo para trabajar con SQLite :
+
+a) forma parte de la bibioteca estandar de Python
+b) se debe instalar con pip
+c) hay que instalarlo desde un archivo
+
+respuesta correcta:  
+*/
